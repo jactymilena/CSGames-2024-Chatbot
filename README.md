@@ -1,4 +1,10 @@
 # CSGames-2024-Chatbot
+Github : https://github.com/jactymilena/CSGames-2024-Chatbot
+
+Instruction : run python main.py
+
+
+
 ## Quelle(s) technique(s) avez-vous utilisé? / What technic(s) did you use?
 
 Pour parvenir à un résultat juste et efficace nous utilisons un ensemble de technique. La première méthode utilisé est la méthode par instruction. En étant clair sur notre intention de recevoir un diagnostique de la par du chatbot celui-ci ajuste sa réponse pour donné un verdict. Pour ne pas abruter ça réponse il est important de ne pas le demander initialement, car celui-ci pourrait tenter de terminer la convertation avec son diagnostique. 
@@ -7,26 +13,24 @@ Pour parvenir à un résultat juste et efficace nous utilisons un ensemble de te
 
 	La dernière technique qui agit tout au long de l’intervention est l’approche 	contextuel. En réutilisant les informations précédentes nous sommes en 	mesure je posés des question qui récupère toute les informations aquis. 
       
-    • Complétion de texte / Text completion prompts
+
     • Basé sur des instructions / Instruction-based prompts
     • Choix multiples / Multiple-choice prompts
     • Contextuel / Contextual prompts
-    • Atténuation des biais / Bias mitigation prompts
-    • Mise au point / Fine-tuning and interactive prompts
-    • Autre / Other ________________________________
+
 ## Quel(s) paramètre(s) avez-vous configuré(s)? / What parameters did you use?
     • Top K  – number : 1
     • Top P – number : N/A
     • Temperature – number : 0,1
-    • Max New Tokens – number : 75
-    • Do Sample – Default | True | False
-    • Return Text - Default | True | False
-    • Return Full Text – Default | True | False
-    • Return Tensors - Default | True | False
-    • Clean Up Tokenization Spaces - Default | True | False
+    • Max New Tokens – number : 70
+    • Do Sample – Default 
+    • Return Text - Default
+    • Return Full Text – Default 
+    • Return Tensors - Default 
+    • Clean Up Tokenization Spaces - Default
     • Prefix – string : You are my medical assistant.
-    • Handle Long Generation - Default | None| Hole
-    • Autre / Other ________________________________
+    • Handle Long Generation - Default 
+
 Décrire l’incidence du paramètrage si utilisé / Describe the impact of the parameters if used
 
 
@@ -46,4 +50,4 @@ Itération de type recherche booléenne pour ajuster les hyper-paramètres de �
 SCÉNARIO 1
 
 Notre prompt : You are my medical assistant. My symptoms are : runny nose, fever, wheezing, decrease in appetite and sneezing. What is my diagnostic?
-Réponse
+Réponse : HI, thanks for using Chat Doctor I am sorry to hear that you are not feeling well. You may have upper respiratory tract infection. 

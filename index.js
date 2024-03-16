@@ -13,6 +13,7 @@ chatForm.addEventListener('submit', event => {
   if (!text) return;
   
   appendMessage('user', text);
+  test(text);
   
   chatInput.value = '';
 });
